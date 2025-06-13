@@ -17,3 +17,8 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@v5
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=Hyperdev-ID_hyperdev-id.github.io
+            -Dsonar.sources=.
+            -Dsonar.organization=hyperdev-id
